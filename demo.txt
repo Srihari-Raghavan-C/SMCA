@@ -1,0 +1,14 @@
+This file explains how to use this app.
+  First this app connects directly to Facebook, Twiiter and Instagram. There is no server component for this app. This ensures privacy of user data.
+    To use this app currently you need to generate tokens for Facebook, Twitter and Instagram
+    How to generate Facebook token?
+      To generate facebook token you need to register your id with facebook developer portal and click the type as Developer.
+      Then you can generate token from facebook developer portal.
+      Please note that facebook token is valid only for 2 hours. In a future release it is planned to automate this token generation in the app itself.
+    How to generate Twitter/X token?
+      Similar to facebook, you need to set up your Twitter/X account as developer type in Twitter/X developer portal.
+      Then you can generate twitter/X token. The token is valid once generated always (no expiry).
+      Twitter feed have a refresh cycle of 15 mins.
+    How to generate Instagram token?
+      Then from Meta developer portal you can generate Instagram Token.
+      Instagram token is also valid always once generated.
