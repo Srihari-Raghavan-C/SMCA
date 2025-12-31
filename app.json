@@ -9,7 +9,17 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "v9wttpbfk9.skadnetwork"
+          },
+          {
+            "SKAdNetworkIdentifier": "n38lu8286q.skadnetwork"
+          }
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,13 +29,28 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "bundler": "metro",
+      "permissions": [
+        "android.permission.INTERNET"
+      ],
+      "package": "com.srihariraghavan.myapp"
     },
     "web": {
+      "bundler": "metro",
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "1642729423828818",
+          "clientToken": "7285c7c78ab51baa454c4726ce538440",
+          "displayName": "SMCA",
+          "scheme": "fb1642729423828818"
+        }
+      ],
       "expo-router",
       [
         "expo-splash-screen",
@@ -43,6 +68,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "076029dc-15ca-47c4-aa73-c687bbfd7d71"
+      }
     }
   }
 }
